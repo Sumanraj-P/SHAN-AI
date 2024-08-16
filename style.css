@@ -1,43 +1,43 @@
 @import url('https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-.nav{
+.nav {
     display: flex;
     justify-content: space-between;
     padding: 10px;
     background-color: #17153B;
 }
 
-.navigation ul li{
+.navigation ul li {
     display: inline-block;
     margin: 15px;
 }
 
-.title h2{
+.title h2 {
     color: #fff;
     font-size: 50px;
     padding-left: 40px;
     font-family: "Platypi", serif;
 }
 
-.navigation ul li a{
+.navigation ul li a {
     color: #fff;
     text-decoration: none;
     font-size: 20px;
     font-family: "Poppins", sans-serif;
 }
 
-.navigation ul li a:hover{
+.navigation ul li a:hover {
     color: #2F58CD;
     text-shadow: 0 1px 2px #2F58CD;
 }
 
-.main{
+.main {
     background: url(background.jpg);
     width: 100%;
     height: 90vh;
@@ -45,35 +45,36 @@
     background-repeat: no-repeat;
     display: flex;
     align-items: center;
-
 }
 
-.texts{
+.texts {
     margin-left: 200px;
     font-family: "Poppins", sans-serif;
 }
 
-.texts h1{
+.texts h1 {
     font-size: 50px;
     color: #fff;
     backdrop-filter: blur(1px);
 }
-.texts h1 span{
+
+.texts h1 span {
     color: #ce3c3c;
 }
 
-.texts h2{
+.texts h2 {
     font-size: 25px;
     color: #fff;
     margin-left: 60px;
     margin-top: 10px;
 }
-.buttons{
+
+.buttons {
     padding: 20px;
     margin-top: 10px;
-
 }
-.buttons button{
+
+.buttons button {
     padding: 15px;
     margin-right: 25px;
     border-radius: 10px;
@@ -83,60 +84,57 @@
     cursor: pointer;
 }
 
-.about{
+.about {
     background-color: #52515123;
 }
 
-.about h1{
+.about h1 {
     padding: 30px;
     font-size: 50px;
 }
 
-.about h1 span{
+.about h1 span {
     color: #ce3c3c;
 }
 
-.about img{
+.about img {
     margin-top: 30px;
     margin-left: 50px;
     width: 750px;
     height: 500px;
-    
 }
 
-.content{
+.content {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
 }
 
-
-.content-text{
+.content-text {
     margin-top: 50px;
 }
-.content-text h3 span{color: #ce3c3c;}
-.content-text h3{
+
+.content-text h3 span {
+    color: #ce3c3c;
+}
+
+.content-text h3 {
     font-size: 35px;
 }
+
 .content-text p {
     margin-top: 20px;
     font-size: 20px;
     max-width: 500px;
 }
 
-@media screen and (max-width: 992px) {
-    .content-text p {
-        max-width: 800px;
-    }
-}
-
-.price h1{
+.price h1 {
     font-size: 50px;
     margin: 20px;
 }
 
-.price span{
+.price span {
     color: #ec3838;
 }
 
@@ -241,36 +239,167 @@
     color: #fff;
 }
 
-
-
-footer{
+footer {
     background-color: #1d1d1ec8;
     width: 100%;
     height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
-@media screen and (max-width:992px) {
-    .navigation ul{
+/* Media Queries */
+@media screen and (max-width: 1000px) {
+    .navigation ul {
         padding: 0;
+    }
+    .navigation ul li {
+        margin: 10px;
     }
     .navigation ul li a{
         font-size: 15px;
     }
-    .title h2{
+    .title h2 {
         font-size: 30px;
     }
-    .content img , .content-text{
-        float: left;
-        width:50%;
+    .texts {
+        margin-left: 100px;
     }
-    .content img{
-        width:450px;
-        height: 300px;
-        margin-left: 0;
+    .texts h1 {
+        font-size: 40px;
+    }
+    .texts h2 {
+        font-size: 20px;
+        margin-left: 40px;
+    }
+    .about img {
+        width: 600px;
+        height: 400px;
+    }
+    .pricing-container {
+        margin: 60px auto;
+        flex-direction: column;
+        width: 90%;
+    }
+    .pricing-plan {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
 
+@media screen and (max-width: 900px) {
+    .texts {
+        margin-left: 50px;
+    }
+    .navigation ul li a{
+        font-size: 15px;
+    }
+    .title h2 {
+        font-size: 30px;
+    }
+    .texts h1 {
+        font-size: 35px;
+    }
+    .texts h2 {
+        font-size: 18px;
+        margin-left: 20px;
+    }
+    .about img {
+        width: 500px;
+        height: 350px;
+    }
+    .pricing-container {
+        margin: 40px auto;
+    }
+    .pricing-plan {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .texts {
+        margin-left: 20px;
+    }
+    .navigation ul li a{
+        font-size: 15px;
+        display: none;
+    }
+    .title h2 {
+        font-size: 40px;
+        text-align: center;
+    }
+    .texts h1 {
+        font-size: 30px;
+    }
+    .texts h2 {
+        font-size: 16px;
+        margin-left: 10px;
+    }
+    .about img {
+        width: 400px;
+        height: 300px;
+    }
+    .pricing-container {
+        margin: 20px auto;
+    }
+    .pricing-plan {
+        width: 100%;
+    }
+    .pricing-plan ul li {
+        font-size: 16px;
+    }
+    .pricing-plan h1 {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    .navigation ul {
+        padding: 0;
+        text-align: center;
+    }
+    .navigation ul li {
+        display: block;
+        margin: 10px 0;
+    }
+    .title h2 {
+        font-size: 30px;
+    }
+    .texts {
+        margin-left: 0;
+        text-align: center;
+    }
+    .texts h1 {
+        font-size: 25px;
+    }
+    .texts h2 {
+        font-size: 14px;
+    }
+    .about img {
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+    .pricing-container {
+        margin: 20px auto;
+        flex-direction: column;
+    }
+    .pricing-plan {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .pricing-plan ul li {
+        font-size: 14px;
+    }
+    .pricing-plan h1 {
+        font-size: 30px;
+    }
+    footer {
+        height: 50px;
+        font-size: 14px;
     }
 }
