@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #17153B;
+}
+
+.navigation ul li{
+    display: inline-block;
+    margin: 15px;
+}
+
+.title h2{
+    color: #fff;
+    font-size: 50px;
+    padding-left: 40px;
+    font-family: "Platypi", serif;
+}
+
+.navigation ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+}
+
+.navigation ul li a:hover{
+    color: #2F58CD;
+    text-shadow: 0 1px 2px #2F58CD;
+}
+
+.main{
+    background: url(images/background.jpg);
+    width: 100%;
+    height: 90vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+
+}
+
+.texts{
+    margin-left: 200px;
+    font-family: "Poppins", sans-serif;
+}
+
+.texts h1{
+    font-size: 50px;
+    color: #fff;
+    backdrop-filter: blur(1px);
+}
+.texts h1 span{
+    color: #ce3c3c;
+}
+
+.texts h2{
+    font-size: 25px;
+    color: #fff;
+    margin-left: 60px;
+    margin-top: 10px;
+}
+.buttons{
+    padding: 20px;
+    margin-top: 10px;
+
+}
+.buttons button{
+    padding: 15px;
+    margin-right: 25px;
+    border-radius: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.about{
+    background-color: #52515123;
+}
+
+.about h1{
+    padding: 30px;
+    font-size: 50px;
+}
+
+.about h1 span{
+    color: #ce3c3c;
+}
+
+.about img{
+    margin-top: 30px;
+    margin-left: 50px;
+    width: 750px;
+    height: 500px;
+    
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.content-text{
+    margin-top: 50px;
+}
+.content-text h3 span{color: #ce3c3c;}
+.content-text h3{
+    font-size: 35px;
+}
+.content-text p {
+    margin-top: 20px;
+    font-size: 20px;
+    max-width: 500px;
+}
+
+@media screen and (max-width: 992px) {
+    .content-text p {
+        max-width: 800px;
+    }
+}
+
+.price h1{
+    font-size: 50px;
+    margin: 20px;
+}
+
+.price span{
+    color: #ec3838;
+}
+
+.pricing-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 80px 150px;
+}
+
+.pricing-plan {
+    background-color: #e9f4fb;
+    width: 30%;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 1px 5px 15px rgba(0, 0, 0, 0.421);
+    position: relative;
+}
+
+.premium-plan {
+    background-color: #000;
+    color: #fff;
+}
+
+.premium-plan .icon {
+    color: #fff;
+}
+
+.pricing-plan h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.pricing-plan .icon {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.pricing-plan h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.pricing-plan ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.pricing-plan ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pricing-plan ul li::before {
+    content: "✔";
+    margin-right: 10px;
+    color: #000;
+}
+
+.premium-plan ul li::before,
+.premium-plan a {
+    color: #fff;
+}
+
+.pricing-plan a {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 16px;
+    text-decoration: none;
+    color: #000;
+}
+
+.premium-plan a {
+    color: #fff;
+}
+
+.pricing-plan button {
+    background-color: #fff;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.premium-plan button {
+    background-color: #fff;
+    color: #000;
+}
+
+.pricing-plan button:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+
+
+footer{
+    background-color: #1d1d1ec8;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+@media screen and (max-width:992px) {
+    .navigation ul{
+        padding: 0;
+    }
+    .navigation ul li a{
+        font-size: 15px;
+    }
+    .title h2{
+        font-size: 30px;
+    }
+    .content img , .content-text{
+        float: left;
+        width:50%;
+    }
+    .content img{
+        width:450px;
+        height: 300px;
+        margin-left: 0;
+
+    }
+}
